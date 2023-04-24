@@ -1,13 +1,76 @@
-header{
-
+*{
+    margin: 1;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 0;
 }
 
-.menu{
+h1{
+    font-size: 25px;
+}
 
+h2{
+    font-size: 20px;
+}
+
+h3{
+    font-size: 18px;
+}
+
+p{
+    font-size: 16px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: bold; 
     
 }
 
-footer{
+nav li {
+    display: inline-block;
+    width: 20%;
+    padding: 5px 10px;
+    background-color: #274C77;
+    border: 1px solid #274C77;
+    text-align: center;
+    color: #fff;
+}
 
+nav li:hover {
+    background-color: #A3CEF1;
+    color: #000;
+}
 
+.servicios{
+    background-color: #E7ECEF;
+    display: grid;
+    width: 90%;
+    height: auto;
+    grid-template: auto / auto;
+    grid-template-areas:
+        "serv_header serv_header"
+        "item_left item_right";
+    grid-gap: 0.5%;
+    padding: 0.5%;
+    
+}
+
+.serv_header{
+    grid-area: serv_header;
+}
+
+.item_left{
+    grid-area: item_left;
+    border-radius: 0.5%;
+    text-align: center;
+}
+
+.item_right{
+    grid-area: item_right;
+    border-radius: 0.5%;
 }
