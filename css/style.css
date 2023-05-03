@@ -74,3 +74,27 @@ nav li:hover {
     grid-area: item_right;
     border-radius: 0.5%;
 }
+.foot {
+    display:grid;
+    grid-template-columns: repeat(12, auto);
+    justify-content: space-around;
+    align-items: auto;
+    align-content: space-around;
+    padding: 20px;
+  }
+  
+  .datos {
+    grid-column: 1 / span 3; 
+    text-align: left;
+  }
+  
+  .mapa {
+    grid-column: 10 / span 8; 
+    text-align: center;
+  }
+  
+.copy {
+    grid-column: 4 / span 8; 
+    
+    text-align: center;
+  }
