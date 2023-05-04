@@ -229,4 +229,15 @@ nav li:hover {
     
     }
 
+    .foot {
+        display:grid;
+        grid-template-columns: repeat(12, auto);
+        justify-content: space-around;
+        align-items: auto;
+        align-content: space-around;
+        padding: 20px;
+      }
+      
+
+
 }
