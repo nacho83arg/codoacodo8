@@ -7,100 +7,158 @@
 
 /* GRID GENERAL*/
 
-html{
+html {
     height: 100%;
 }
 
-body{
+body {
     font-size: 1.2em;
     min-height: 100%;
     padding: 2%;
     margin: 2%;
 }
 
-header{
+header {
     grid-area: header;
 }
 
-nav{
-    grid-area: nav;
-    background-color: #274C77;
+
+section {
+    grid-area: section;
 }
 
-section{
-grid-area: section;
-}
-
-footer{
+footer {
     grid-area: footer;
 }
 
-.grid-container{
-padding: 10%;
-text-align: center;
-display: grid;
-gap: 10px;
-grid-template-areas: 
-    "header"
-    "nav"
-    "section"
-    "footer";
+.grid-container {
+    padding: 10%;
+    text-align: center;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        "header"
+        "nav"
+        "section"
+        "footer";
+}
 
+h2{
+    font-size: 2em;
+}
+
+h3{
+    font-size: .8em;
 }
 
 
 /* MENU */
 
-nav a {
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    width: auto;
+    max-height: 0px;
+    overflow: hidden;
+    transition: 1s all;
+}
+
+.mostrar {
+    max-height: 500px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li a {
     text-decoration: none;
-    color: white;
-    font-size: 12px;
-    font-weight: bold; 
-    
-}
-
-nav li {
-    width: 20%;
-    padding: 5px 10px;
+    display: block;
+    width: auto;
     background-color: #274C77;
-    border: 1px solid #274C77;
-    text-align: center;
-    color: #fff;
+    color: white;
+    padding: 5px;
 }
 
-nav li:hover {
-    background-color: #A3CEF1;
-    color: #000;
+nav ul li a:hover {
+    background-color: #E7ECEF;
+    color: black;
+}
+
+.menu {
+    padding: 10px;
+    background-color: #274C77;
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
 }
 
 /* INDEX */
 
 /* SERVICIOS */
 
-.serv_header{
-    grid-area: serv_header;
+
+.titulo_s{
+    display: flex;
+    flex-direction: column;
+    background-color: #A3CEF1;
 }
 
-.item_left{
-    grid-area: item_left;
+
+.lupa{
+    cursor: pointer;
 }
 
-.item_right{
-    grid-area: item_right;
-}
-
-.servicios{
+.servicios {
     background-color: #E7ECEF;
-    padding: 0.5%;
-    text-align: left ;
+    padding: 1%;
+    text-align: left;
     display: grid;
-    gap: 10px;
-    grid-template: 
-    "serv_header serv_header" auto
-    "item_left item_right" 150px auto;
+    gap: 20px;
+    grid-template-columns: 50px auto;
+    grid-template-rows: auto auto;
 }
 
+.img_s{
+    display: flex;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+}
 
+.texto_s1{
+    max-height: 0px;
+    overflow: hidden;
+    transition: 1s all;
+}
+
+.texto_s2{
+    max-height: 0px;
+    overflow: hidden;
+    transition: 1s all;
+}
+
+.texto_s3{
+    max-height: 0px;
+    overflow: hidden;
+    transition: 1s all;
+}
+
+.texto_s4{
+    max-height: 0px;
+    overflow: hidden;
+    transition: 1s all;
+}
+
+.texto_s5{
+    max-height: 0px;
+    overflow: hidden;
+    transition: 1s all;
+}
 
 /* QUIENES SOMOS */
 
@@ -122,93 +180,132 @@ nav li:hover {
 
 /* RESPONSIVE TABLET*/
 
-@media (min-width: 600px){
-    .grid-container{
-        grid-template: 
-    "header"    100px
-    "nav"       50px
-    "section"   auto
-    "footer"    200px;
-}
-nav a {
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    font-weight: bold; 
+
+@media (min-width: 600px) {
+    .grid-container {
+        grid-template:
+            "header" 100px
+            "nav" 50px
+            "section" auto
+            "footer" 200px;
+    }
+
+    h2{
+        font-size: 2.5em;
+    }
     
+    h3{
+        font-size: 1em;
+    }
+    
+
+    /* MENU */
+    .menu {
+        display: none;
+    }
+    
+    nav {
+        grid-area: nav;
+        width: 100%;
+        background-color: #274C77;
+        width: 100%;
+        max-height: 100px;
+  }
+
+    nav a {
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+
+    }
+
+    nav li {
+        display: inline-block;
+        width: 20%;
+        padding: 5px 10px;
+        background-color: #274C77;
+        text-align: center;
+        color: #fff;
+    }
+
+
+    nav li:hover {
+        background-color: #A3CEF1;
+        color: #000;
+    }
+
+    /* SERVICIOS */
+
+    .servicios {
+        background-color: #E7ECEF;
+        padding: 1%;
+        text-align: left;
+        font-size: 1em;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 50px auto;
+        grid-template-rows: auto auto;
+    }
+
+    .texto_s{
+        max-height: 600px;
+  }
+
+  .lupa{
+    max-height: 0px;
+    overflow: hidden;
+    transition: 1s all;
+  }
+
+  /* FOOTER */ 
+
+    .foot {
+        display: grid;
+        grid-template-columns: repeat(12, auto);
+        justify-content: space-around;
+        align-items: auto;
+        align-content: space-around;
+        padding: 20px;
+    }
+
+    .datos {
+        grid-column: 1 / span 3;
+        text-align: left;
+    }
+
+    .mapa {
+        grid-column: 10 / span 8;
+        text-align: center;
+    }
+
+    .copy {
+        grid-column: 4 / span 8;
+        text-align: center;
+    }
 }
 
-nav li {
-    display: inline-block;
-    width: 20%;
-    padding: 5px 10px;
-    background-color: #274C77;
-    border: 1px solid #274C77;
-    text-align: center;
-    color: #fff;
-}
-
-nav li:hover {
-    background-color: #A3CEF1;
-    color: #000;
-}
-
-.foot {
-    display:grid;
-    grid-template-columns: repeat(12, auto);
-    justify-content: space-around;
-    align-items: auto;
-    align-content: space-around;
-    padding: 20px;
-  }
-  
-  .datos {
-    grid-column: 1 / span 3; 
-    text-align: left;
-  }
-  
-  .mapa {
-    grid-column: 10 / span 8; 
-    text-align: center;
-  }
-  
-.copy {
-    grid-column: 4 / span 8; 
-    text-align: center;
-  }
-}
 
 /* RESPONSIVE PC*/
 
-@media (min-width: 900px){
-    .grid-container{
-        grid-template: 
-    "header header"    100px
-    "nav section"       50px auto
-    "footer footer"    200px;
-}
-nav a {
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    font-weight: bold; 
-    
-}
 
-nav li {
-    display: inline-block;
-    width: 20%;
-    padding: 5px 10px;
-    background-color: #274C77;
-    border: 1px solid #274C77;
-    text-align: center;
-    color: #fff;
-}
 
-nav li:hover {
-    background-color: #A3CEF1;
-    color: #000;
-}
+@media (min-width: 900px) {
+
+    /* MENU */
+
+    nav a {
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+
+    }
+
+
+
+
+
 }

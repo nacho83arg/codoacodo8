@@ -11,10 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;600&display=swap" rel="stylesheet">
+    <script src="js/nav.js"></script>
     <title>Contacto</title>
 </head>
-
-
 
 
 <body>
@@ -23,20 +22,22 @@
         <h4>Transformando tus ideas en realidad tecnológica</h4>
     </header>
 
-
-
-
-    <nav class="menu">
+    <div class="menu" id="menu"><img src="icn/barra-menu.png" alt="menu" width="50px"></div>
+    <nav id="navegacion">
         <ul type="none">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="quienessomos.html">Quienes Somos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li> <a href="index.html">Inicio</a></li>
+            <li> <a href="servicios.html">Servicios</a></li>
+            <li> <a href="quienessomos.html">Quienes Somos</a></li>
+            <li> <a href="contacto.html">Contacto</a></li>
         </ul>
-    </nav>
-
-
-
+        </nav>
+        
+        <script>
+            document.getElementById("menu").addEventListener("click", myfunction);
+            function myfunction() {
+                document.getElementById("navegacion").classList.toggle("mostrar");
+            };
+        </script>
 
     <section>
         <h2>¡Bienvenido!</h2>

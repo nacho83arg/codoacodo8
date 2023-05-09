@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="favicon/logo ico.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="favicon/logo ico.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;600&display=swap" rel="stylesheet">
+    <script src="js/nav.js" type="text/javascript"></script>
     <title>Servicios</title>
 </head>
 
@@ -20,7 +20,8 @@
         <h4>Transformando tus ideas en realidad tecnológica</h4>
     </header>
 
-    <nav class="menu">
+    <div class="menu" id="menu"><img src="icn/barra-menu.png" alt="menu" width="50px"></div>
+    <nav id="navegacion">
         <ul type="none">
             <li> <a href="index.html">Inicio</a></li>
             <li> <a href="servicios.html">Servicios</a></li>
@@ -29,66 +30,133 @@
         </ul>
     </nav>
 
+    <script>
+        document.getElementById("menu").addEventListener("click", myfunction);
+        function myfunction() {
+            document.getElementById("navegacion").classList.toggle("mostrar");
+        };
+    </script>
+
+
+    <!-- SECCION SERVICIOS -->
+
+    <div class="serv_header">
+        <h3>Servicios</h3>
+        <p> <b>Ofrecemos una solución integral a sus proyectos, nuestros servicios son:</b></p>
+    </div>
+
     <section class="servicios">
 
-        <div class="serv_header">
-            <h3>Servicios</h3>
-            <p>Ofrecemos una solución integral a sus proyectos, nuestros servicios son:</p>
-        </div>
-
         <div class="item_left1">
-            <img src="img/instal_elec.jpg" alt="instalaciones_electricas" width="200">
+            <img class="img_s" src="icn/instaleelc.png" alt="instalaciones_electricas">
         </div>
-
         <div class="item_right1">
+            <div class="titulo_s">
             <h3>Instalaciones eléctricas</h3>
-            <p>Realizamos la instalación eléctrica completa, desde la proyección a la ejecución y certificación.</p>
+            <img class="lupa" id="lupa1" src="icn/lupa.png" alt="ver_mas" width="30px">
+        </div>
+        <div class="texto_s1">
+            <p>Realizamos la instalación eléctrica completa, desde la proyección, ejecución y certificación.</p>
+            <p>Trabajamos en sistemas monofásicos y trifásicos, tanto en baja, como media tensión</p>
+        </div>
         </div>
 
 
         <div class="item_left2">
-            <img src="img/ilum.jpg" alt="iluminacion" width="200">
+            <img class="img_s" src="icn/iluminacion.png" alt="iluminacion">
         </div>
-
         <div class="item_right2">
+            <div class="titulo_s">
             <h3>Iluminación</h3>
-            <p>Contamos con un equipo especializado en iluminación de ambientes, para ofrecerle diferentes alternativas
-                que cumplan con los requisitos lumínicos, sin perder de vista la estética.</p>
+            <img class="lupa" id="lupa2" src="icn/lupa.png" alt="ver_mas" width="30px">
+        </div>
+        <div class="texto_s2">
+            <p>Contamos con un equipo especializado en iluminación de ambientes, para ofrecerle diferentes alternativas que cumplan con los requisitos lumínicos, sin perder de vista la estética.</p>
+            </div>        
         </div>
 
 
         <div class="item_left3">
-            <img src="img/domotica.jpg" alt="domotica" width="200">
+            <img class="img_s" src="icn/domotica.png" alt="domotica">
         </div>
-
         <div class="item_right3">
+            <div class="titulo_s">
             <h3>Domótica</h3>
-            <p>Nos especializamos en la automatización de ambientes, combinando las diferentes tecnologías para
+            <img class="lupa" id="lupa3" src="icn/lupa.png" alt="ver_mas" width="30px">
+        </div>
+        <div class="texto_s3">
+            <p>Nos especializamos en la automatización de ambientes, combinando las diferentes tecnologías actuales para
                 controlar la iluminación, climatización, accesos, etc.</p>
+                <p>Instalamos sensores de presencia, temperatura, humedad para controlar todos sus dispositivos sin la necesidas de intervensión humana.</p>
+                <p>También podrá visualizar todos los aspectos de su instalación y controlarlos a través de nuestra app.</p>
+            </div>
         </div>
 
 
         <div class="item_left4">
-            <img src="img/informatica.jpg" alt="sistemas_informaticos" width="200">
+            <img class="img_s" src="icn/sistemas.png" alt="sistemas_informaticos">
         </div>
 
         <div class="item_right4">
+            <div class="titulo_s">
             <h3>Sistemas informaticos</h3>
-            <p>Desarrollamos sistemas a medida del cliente, para facturación, control de stock, personal, localización,
-                etc.</p>
+            <img class="lupa" id="lupa4" src="icn/lupa.png" alt="ver_mas" width="30px">
         </div>
+        <div class="texto_s4">
+            <p>Desarrollamos sistemas informaticos a medida de cada cliente, para manejar la facturación, el control de stock, el personal, localización,
+                etc.</p>
+            </div>
+        </div>
+
 
         <div class="item_left5">
-            <img src="img/redes.jpg" alt="redes" width="200">
+            <img class="img_s" src="icn/redes.png" alt="redes">
         </div>
-
         <div class="item_right5">
+            <div class="titulo_s">
             <h3>Servidores y Redes</h3>
-            <p>Completamos nuestra oferta con el diseño e instalación de los sistemas completos de redes.</p>
+            <img class="lupa" id="lupa5" src="icn/lupa.png" alt="ver_mas" width="30px">
         </div>
-
-
+        <div class="texto_s5">
+            <p>Completamos nuestra oferta con el diseño e instalación de los sistemas completos de redes.</p>
+            <p>Servidores, cableado estructural, cámaras de seguridad y mas.</p>
+        </div>
+        </div>
     </section>
+
+    <script>
+
+            document.getElementById("lupa1").addEventListener("click", myfunction);
+            function myfunction() {
+                document.getElementById("texto_s1").classList.toggle("mostrar");
+            };
+
+            document.getElementById("lupa2").addEventListener("click", myfunction);
+            function myfunction() {
+                document.getElementById("texto_s2").classList.toggle("mostrar");
+            };
+            
+            document.getElementById("lupa3").addEventListener("click", myfunction);
+            function myfunction() {
+                document.getElementById("texto_s3").classList.toggle("mostrar");
+            };
+
+            document.getElementById("lupa4").addEventListener("click", myfunction);
+            function myfunction() {
+                document.getElementById("texto_s4").classList.toggle("mostrar");
+            };
+
+            document.getElementById("lupa5").addEventListener("click", myfunction);
+            function myfunction() {
+                document.getElementById("texto_s5").classList.toggle("mostrar");
+            };
+
+    </script>
+
+
+
+
+        <!-- FOOTER -->
 
 
     <footer>
