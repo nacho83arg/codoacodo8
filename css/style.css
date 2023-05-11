@@ -51,6 +51,14 @@ h3 {
     font-size: .8em;
 }
 
+h5 {
+    font-size: 1.5em;
+}
+
+h6 {
+    font-size: .8em;
+}
+
 
 /* MENU */
 
@@ -314,10 +322,76 @@ nav ul li a:hover {
 
 /* CONTACTO */
 
+.formulario {
+    color: #274C77;
+	text-shadow: 0px 0px 0px #8B8C89;
+	width: 100%;
+	height: 80%;
+	text-align: center;
+	align-content: center;
+    padding-bottom: 40px;
+	background: #E7ECEF;
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(139,140,137,1);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(139,140,137,1);
+    box-shadow: 1px 2px 5px 0px rgba(139,140,137,1);
+}
 
+.input-text {
+	margin: 2%;
+	width: 85%;
+	border-radius: 8px;
+	height: 48px;
+	font-family: 'Prompt', sans-serif;
+	color:#17171e;
+	border:none;
+	padding-left: 5%;
+	padding-top: .5%;
+	padding-right: 1%;
+}
 
+.text {
+    margin: 2%;
+	width: 85%;
+	border-radius: 8px;
+	height: 192px;
+	font-family: 'Prompt', sans-serif;
+	color:#17171e;
+	border:none;
+	padding-left: 4%;
+	padding-top: 2%;
+	padding-right: 1%;
+}
 
+#boton-enviar {
+    color: #e7ecef;
+    background-color: #274c77;
+    font-size: 19px;
+    border: 0px solid #a3cef1;
+    border-radius: 10px;
+    padding: 15px 50px;
+    letter-spacing: 1px;
+    cursor: pointer
+}
+#boton-enviar:hover {
+    color: #e7ecef;
+    background-color: #a3cef1;
+}
 
+.intro-formulario {
+	padding-top: 5%;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 2.5%;
+}
+
+#gracias{
+	display: none;
+}
+
+#ok {
+	margin-top: 5%;
+	width: 20%;
+}
 
 /* FOOTER */
 
