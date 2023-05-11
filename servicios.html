@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;600&display=swap" rel="stylesheet">
-    <script src="js/nav.js" type="text/javascript"></script>
+    <script src="./js/nav.js" defer type="text/javascript"></script>
     <title>Servicios</title>
 </head>
 
@@ -34,14 +34,6 @@
         </ul>
     </nav>
 
-    <script>
-        document.getElementById("menu").addEventListener("click", myfunction);
-        function myfunction() {
-            document.getElementById("navegacion").classList.toggle("mostrar");
-        };
-    </script>
-
-
     <!-- SECCION SERVICIOS -->
 
     <div class="serv_header">
@@ -57,11 +49,12 @@
         <div class="item_right1">
             <div class="titulo_s">
             <h3>Instalaciones eléctricas</h3>
-            <img class="lupa" id="lupa1" src="icn/lupa.png" alt="ver_mas" width="30px">
+            <img class="lupa1" id="lupa1" src="icn/lupa.png" alt="ver_mas">
         </div>
-        <div class="texto_s1">
+        <div class="texto_s1" id="texto_s1">
             <p>Realizamos la instalación eléctrica completa, desde la proyección, ejecución y certificación.</p>
-            <p>Trabajamos en sistemas monofásicos y trifásicos, tanto en baja, como media tensión</p>
+            <p>Trabajamos en sistemas monofásicos y trifásicos, tanto en baja como media tensión.</p>
+            <p>Contanos que necesitas y nosotros lo resolvemos.</p>
         </div>
         </div>
 
@@ -72,9 +65,9 @@
         <div class="item_right2">
             <div class="titulo_s">
             <h3>Iluminación</h3>
-            <img class="lupa" id="lupa2" src="icn/lupa.png" alt="ver_mas" width="30px">
+            <img class="lupa2" id="lupa2" src="icn/lupa.png" alt="ver_mas">
         </div>
-        <div class="texto_s2">
+        <div class="texto_s2" id="texto_s2">
             <p>Contamos con un equipo especializado en iluminación de ambientes, para ofrecerle diferentes alternativas que cumplan con los requisitos lumínicos, sin perder de vista la estética.</p>
             </div>        
         </div>
@@ -86,13 +79,13 @@
         <div class="item_right3">
             <div class="titulo_s">
             <h3>Domótica</h3>
-            <img class="lupa" id="lupa3" src="icn/lupa.png" alt="ver_mas" width="30px">
+            <img class="lupa3" id="lupa3" src="icn/lupa.png" alt="ver_mas"">
         </div>
-        <div class="texto_s3">
+        <div class="texto_s3" id="texto_s3">
             <p>Nos especializamos en la automatización de ambientes, combinando las diferentes tecnologías actuales para
-                controlar la iluminación, climatización, accesos, etc.</p>
+                controlar la iluminación, climatización, accesos y todo lo que se te ocurra.</p>
                 <p>Instalamos sensores de presencia, temperatura, humedad para controlar todos sus dispositivos sin la necesidas de intervensión humana.</p>
-                <p>También podrá visualizar todos los aspectos de su instalación y controlarlos a través de nuestra app.</p>
+                <p>También podrás visualizar todos los aspectos de tu instalación y controlarlos a través de nuestra app.</p>
             </div>
         </div>
 
@@ -104,11 +97,13 @@
         <div class="item_right4">
             <div class="titulo_s">
             <h3>Sistemas informaticos</h3>
-            <img class="lupa" id="lupa4" src="icn/lupa.png" alt="ver_mas" width="30px">
+            <img class="lupa4" id="lupa4" src="icn/lupa.png" alt="ver_mas">
         </div>
-        <div class="texto_s4">
-            <p>Desarrollamos sistemas informaticos a medida de cada cliente, para manejar la facturación, el control de stock, el personal, localización,
+        <div class="texto_s4" id="texto_s4">
+            <p>Desarrollamos sistemas informaticos a medida de cada cliente, para manejar tu facturación, el stock, el personal, localización,
                 etc.</p>
+            <p>Creamos software a la medida del cliente.</p>
+            <p>También ofrecemos servicio de posventa, actualizaciones y mantenimiento.</p>    
             </div>
         </div>
 
@@ -119,43 +114,16 @@
         <div class="item_right5">
             <div class="titulo_s">
             <h3>Servidores y Redes</h3>
-            <img class="lupa" id="lupa5" src="icn/lupa.png" alt="ver_mas" width="30px">
+            <img class="lupa5" id="lupa5" src="icn/lupa.png" alt="ver_mas">
         </div>
-        <div class="texto_s5">
+        <div class="texto_s5" id="texto_s5">
             <p>Completamos nuestra oferta con el diseño e instalación de los sistemas completos de redes.</p>
             <p>Servidores, cableado estructural, cámaras de seguridad y mas.</p>
         </div>
         </div>
     </section>
 
-    <script>
 
-            document.getElementById("lupa1").addEventListener("click", myfunction);
-            function myfunction() {
-                document.getElementById("texto_s1").classList.toggle("mostrar");
-            };
-
-            document.getElementById("lupa2").addEventListener("click", myfunction);
-            function myfunction() {
-                document.getElementById("texto_s2").classList.toggle("mostrar");
-            };
-            
-            document.getElementById("lupa3").addEventListener("click", myfunction);
-            function myfunction() {
-                document.getElementById("texto_s3").classList.toggle("mostrar");
-            };
-
-            document.getElementById("lupa4").addEventListener("click", myfunction);
-            function myfunction() {
-                document.getElementById("texto_s4").classList.toggle("mostrar");
-            };
-
-            document.getElementById("lupa5").addEventListener("click", myfunction);
-            function myfunction() {
-                document.getElementById("texto_s5").classList.toggle("mostrar");
-            };
-
-    </script>
 
 
 
