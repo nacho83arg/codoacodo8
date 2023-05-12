@@ -257,6 +257,13 @@ nav ul li a:hover {
 
 /* SERVICIOS */
 
+.servicios{
+    background-color: white;
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(139,140,137,1);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(139,140,137,1);
+    box-shadow: 1px 2px 5px 0px rgba(139,140,137,1);
+}
+
 .item_right{
     display: flex;
     height: auto;
