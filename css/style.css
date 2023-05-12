@@ -60,6 +60,34 @@ h6 {
 }
 
 
+
+/* HEADER */
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 0.25fr);
+    justify-content: space-around;
+    align-items: auto;
+    align-content: space-around;
+    padding: 20px;
+    background-color: #6096BA;
+}
+
+.item-header1{
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.item-header2{
+    grid-column: 1/-1;
+    grid-row: 2;
+    text-align: center;
+    color: #E7ECEF;
+}
+
+
+
 /* MENU */
 
 nav {
