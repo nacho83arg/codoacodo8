@@ -502,10 +502,11 @@ nav ul li a:hover {
     }
 
     nav a {
+        align-items: center;
         text-align: center;
         text-decoration: none;
         color: white;
-        font-size: 12px;
+        font-size: 18px;
         font-weight: bold;
 
     }
