@@ -522,7 +522,13 @@ footer {
 
 /* CONTACTO */
 
+.input-text {
+    width: 60%;
+}
 
+.text {
+    width: 60%;
+}
 
 
 /* RESPONSIVE PC*/
@@ -542,7 +548,15 @@ footer {
 
     }
 
+    /* CONTACTO */
 
+.input-text {
+    width: 50%;
+}
+
+.text {
+    width: 50%;
+}
 
 
 
