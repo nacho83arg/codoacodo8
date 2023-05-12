@@ -349,6 +349,13 @@ nav ul li a:hover {
 
 /* QUIENES SOMOS */
 
+.quienes {
+    background: #E7ECEF;
+    -webkit-box-shadow: 1px 0px 5px 0px rgba(139,140,137,1);
+    -moz-box-shadow: 1px 0px 5px 0px rgba(139,140,137,1);
+    box-shadow: 1px 0px 5px 0px rgba(139,140,137,1);
+}
+
 .quienes h2 {
     text-align: center;
     font-size: 2em;
@@ -368,6 +375,10 @@ nav ul li a:hover {
     justify-content: center;
     padding-top: 1em;
     padding-bottom: 1em;
+    background: #E7ECEF;
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(139,140,137,1);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(139,140,137,1);
+    box-shadow: 1px 2px 5px 0px rgba(139,140,137,1);
 }
 .personal-item {
     margin: 20px;
