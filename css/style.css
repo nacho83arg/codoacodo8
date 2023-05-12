@@ -29,6 +29,12 @@ section {
 
 footer {
     grid-area: footer;
+    background-color: #274C77;
+    color: #E7ECEF;
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(139,140,137,1);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(139,140,137,1);
+    box-shadow: 1px 2px 5px 0px rgba(139,140,137,1);
+    padding: 2%;
 }
 
 .grid-container {
@@ -393,16 +399,6 @@ nav ul li a:hover {
 	width: 20%;
 }
 
-/* FOOTER */
-
-footer {
-    background-color: #274C77;
-    color: #E7ECEF;
-    -webkit-box-shadow: 1px 2px 5px 0px rgba(139,140,137,1);
-    -moz-box-shadow: 1px 2px 5px 0px rgba(139,140,137,1);
-    box-shadow: 1px 2px 5px 0px rgba(139,140,137,1);
-    padding: 2%;
-}
 
 
 
