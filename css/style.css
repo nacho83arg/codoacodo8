@@ -16,6 +16,10 @@ body {
     min-height: 100%;
     padding: 2%;
     margin: 2%;
+    background-image: url("/img/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
 }
 
 header {
