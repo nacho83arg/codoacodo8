@@ -166,12 +166,7 @@ nav ul li a:hover {
   
   }
   
-  /* .item11 {
-    
-    
-    
-    background-color: none;
-  } */
+ 
   .carrusel {
     grid-column-start: 1;
     grid-column-end: 4;
@@ -186,7 +181,7 @@ nav ul li a:hover {
     margin: 0;
     padding: 0;
     max-width: 1030px;
-    /* max-width: 510px; */
+    
     
     
   }
@@ -229,9 +224,9 @@ nav ul li a:hover {
   }
  
   .btn-somos {
-    position: absolute; /* Agregamos position: absolute al botón */
-    bottom: 10px; /* Lo posicionamos en la parte inferior */
-    right: 10px; /* Lo posicionamos en la parte izquierda */
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
   }
 
   .item33 {
@@ -242,15 +237,15 @@ nav ul li a:hover {
   background-color: #E7ECEF;
   position: relative;
   padding: 10px;
-  display: flex; /* añade display:flex para el contenedor */
-  flex-direction: column; /* ajusta la dirección de los elementos */
+  display: flex; 
+  flex-direction: column; 
   }
   .item33 ul{
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-  /* flex-wrap: nowrap; Cambiado a nowrap */
+ 
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -260,9 +255,9 @@ nav ul li a:hover {
  
   }
   .btn-servicios {
-    position: absolute; /* Agregamos position: absolute al botón */
-    bottom: 10px; /* Lo posicionamos en la parte inferior */
-    right: 10px; /* Lo posicionamos en la parte izquierda */
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
   }
   .item44 {
     
@@ -285,7 +280,7 @@ nav ul li a:hover {
     margin: 0;
     padding: 0;
     max-width: 1030px;
-    /* max-width: 510px; */
+    
     
     
   }
