@@ -233,15 +233,18 @@ nav ul li a:hover {
 .item22 {
     grid-column-start: 1;
     grid-column-end: 1;
-    border: 1px solid black;
+    border: 1px solid #8B8C89;
     grid-column-start: 1;
     grid-column-end: 1;
     text-align: start;
-    background-color: #E7ECEF;
+    background-color: #A3CEF1;
     position: relative;
     padding: 20px;
     max-width: 500px;
-    max-height: auto;
+    max-height: 300px;
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
+    box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
 
 }
 
@@ -258,13 +261,16 @@ nav ul li a:hover {
 .item33 {
     grid-column-start: 2;
     grid-column-end: 2;
-    border: 1px solid black;
+    border: 1px solid #8B8C89;
     text-align: start;
-    background-color: #E7ECEF;
+    background-color: #A3CEF1;
     position: relative;
     padding: 20px;
     max-width: 500px;
-    max-height: auto;
+    max-height: 300px;
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
+    box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
 
 
 }
@@ -295,10 +301,14 @@ nav ul li a:hover {
 .clientes {
     grid-column-start: 3;
     grid-column-end: 3;
-    max-width: 300px;
+    max-width: 500px;
     text-align: center;
     padding: 20px;
-    background-color: white;
+    background-color: #A3CEF1;
+    border: 1px solid #8B8C89;
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
+    box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
 }
 
 .carrusel1 {
@@ -315,15 +325,15 @@ nav ul li a:hover {
 }
 
 .carrusel-fotos1 li {
-    animation: slide1 10s linear normal infinite backwards;
-  
-    width: 200px;
+    animation: slide1 15s linear normal infinite;
+    width: 300px;
 }
 
 .carrusel-fotos1 {
     display: flex;
     gap: 100px;
     overflow: hidden;
+    width: 500px;
 }
 
 .carrusel-fotos1 img {
@@ -335,16 +345,15 @@ nav ul li a:hover {
 .carrusel-fotos1 p {
     font-size: 15px;
     padding-top: 5px;
-    
 }
 
 @keyframes slide1 {
     0% {
-        transform: translateX(-530%);
+        transform: translateX(-600%);
     }
 
     100% {
-        transform: translateX(180%);
+        transform: translateX(550%);
     }
 
 }
@@ -412,6 +421,11 @@ nav ul li a:hover {
   
   .icn_redes {
     width: 50px;
+  }
+
+  footer a{
+    text-decoration: none;
+    color: white;
   }
 
 
