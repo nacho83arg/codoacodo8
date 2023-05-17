@@ -333,6 +333,7 @@ nav ul li a:hover {
     display: flex;
     gap: 100px;
     overflow: hidden;
+    width: 500px;
 }
 
 .carrusel-fotos1 img {
@@ -420,6 +421,11 @@ nav ul li a:hover {
   
   .icn_redes {
     width: 50px;
+  }
+
+  footer a{
+    text-decoration: none;
+    color: white;
   }
 
 
