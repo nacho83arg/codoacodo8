@@ -246,7 +246,12 @@ nav ul li a:hover {
 .item22 p{
     font-size: 15px;
 }
-
+.item22 a {
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+  
+}
 
 .item33 {
     grid-column-start: 2;
@@ -279,7 +284,12 @@ nav ul li a:hover {
     font-size: 15px;
 }
 
-
+.item33 a {
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+  
+}
 .clientes {
     grid-column-start: 3;
     grid-column-end: 3;
@@ -302,19 +312,20 @@ nav ul li a:hover {
 }
 
 .carrusel-fotos1 li {
-    animation: slide1 30s linear normal infinite;
+    animation: slide1 15s linear normal infinite;
     width: 200px;
 }
 
 .carrusel-fotos1 {
     display: flex;
-    gap: 10px;
+    gap: 100px;
     overflow: hidden;
 }
 
 .carrusel-fotos1 img {
     width: 150px;
     height: auto;
+    
 }
 
 .carrusel-fotos1 p {
@@ -324,11 +335,11 @@ nav ul li a:hover {
 
 @keyframes slide1 {
     0% {
-        transform: translateX(0%);
+        transform: translateX(-600%);
     }
 
     100% {
-        transform: translateX(-400%);
+        transform: translateX(550%);
     }
 
 }
