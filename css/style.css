@@ -225,6 +225,8 @@ nav ul li a:hover {
 .principal{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    
 
 }
 
@@ -238,7 +240,7 @@ nav ul li a:hover {
     background-color: #E7ECEF;
     position: relative;
     padding: 20px;
-    max-width: auto;
+    max-width: 500px;
     max-height: auto;
 
 }
@@ -261,7 +263,7 @@ nav ul li a:hover {
     background-color: #E7ECEF;
     position: relative;
     padding: 20px;
-    max-width: auto;
+    max-width: 500px;
     max-height: auto;
 
 
@@ -293,6 +295,7 @@ nav ul li a:hover {
 .clientes {
     grid-column-start: 3;
     grid-column-end: 3;
+    max-width: 300px;
     text-align: center;
     padding: 20px;
     background-color: white;
