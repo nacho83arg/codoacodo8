@@ -325,13 +325,13 @@ nav ul li a:hover {
 }
 
 .carrusel-fotos1 li {
-    animation: slide1 15s linear normal infinite;
+    animation: slide1 10s linear alternate infinite backwards;
     width: 300px;
 }
 
 .carrusel-fotos1 {
     display: flex;
-    gap: 100px;
+    gap: 150px;
     overflow: hidden;
     width: 500px;
 }
@@ -349,11 +349,11 @@ nav ul li a:hover {
 
 @keyframes slide1 {
     0% {
-        transform: translateX(-600%);
+        transform: translateX(15%);
     }
 
     100% {
-        transform: translateX(550%);
+        transform: translateX(-430%);
     }
 
 }
