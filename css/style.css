@@ -36,9 +36,9 @@ footer {
     grid-area: footer;
     background-color: #274C77;
     color: #E7ECEF;
-    -webkit-box-shadow: 1px 2px 5px 0px rgba(139,140,137,1);
-    -moz-box-shadow: 1px 2px 5px 0px rgba(139,140,137,1);
-    box-shadow: 1px 2px 5px 0px rgba(139,140,137,1);
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
+    box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
     padding: 2%;
     list-style: none;
 }
@@ -86,12 +86,12 @@ h6 {
     background-color: #6096BA;
 }
 
-.item-header1{
+.item-header1 {
     grid-column: 1/-1;
     text-align: center;
 }
 
-.item-header2{
+.item-header2 {
     grid-column: 1/-1;
     grid-row: 2;
     text-align: center;
@@ -145,192 +145,223 @@ nav ul li a:hover {
     text-align: center;
 }
 
+
+
+
+
+
+
 /* INDEX */
 
 
 
- .grid-container34 {
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3% ;
-    grid-template-rows: auto 450px auto;
-    gap: 5px;
+.grid-container34 {
     background-color: #E7ECEF;
     padding: 5px;
-  
-  }
-  
-  .grid-container34 > div {
-   
+
+}
+
+.grid-container34>div {
+
     padding: 20px 0;
     font-size: 30px;
     column-gap: 50px;
-  
-  }
-  
- 
-  .carrusel {
+
+}
+
+
+.carrusel {
     grid-column-start: 1;
     grid-column-end: 4;
     display: flex;
     gap: 10px;
     justify-content: center;
-  
-  }
-  
-  .carrusel ul {
+    background-color: white;
+
+}
+
+.carrusel ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    max-width: 1030px;
-    
-    
-    
-  }
-  .carrusel-fotos li{
+    max-width: auto;
+    max-height: auto;
+
+
+
+}
+
+.carrusel-fotos li {
     animation: slide 5s linear alternate infinite;
     position: relative;
-  }
-  
-  .carrusel-fotos {
+}
+
+.carrusel-fotos {
     display: flex;
     gap: 10px;
     overflow: hidden;
-    
-  }
-  
-  .carrusel-fotos img {
-    
-    
+
+}
+
+.carrusel-fotos img {
+
+
     width: 1030px;
     height: 200px;
-    
-  }
-  @keyframes slide {
+
+}
+
+@keyframes slide {
     0% {
-      transform: translateX(0%);
+        transform: translateX(0%);
     }
+
     100% {
         transform: translateX(-200%);
     }
-  }
-  .item22 {
+}
+
+
+.principal{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.item22 {
+    grid-column-start: 1;
+    grid-column-end: 1;
     border: 1px solid black;
     grid-column-start: 1;
-    grid-column-end: 2;
-  text-align: start;
-  background-color: #E7ECEF;
-  position: relative;
-  padding: 10px;
+    grid-column-end: 1;
+    text-align: start;
+    background-color: #E7ECEF;
+    position: relative;
+    padding: 20px;
+    max-width: auto;
+    max-height: auto;
 
-  }
- 
-  .btn-somos {
-    position: absolute; 
-    bottom: 10px; 
-    right: 10px; 
-  }
+}
 
-  .item33 {
-    border: 1px solid black;
+.item22 p{
+    font-size: 15px;
+}
+
+
+.item33 {
     grid-column-start: 2;
-  grid-column-end: 3;
-  text-align: start;
-  background-color: #E7ECEF;
-  position: relative;
-  padding: 10px;
-  display: flex; 
-  flex-direction: column; 
-  }
-  .item33 ul{
+    grid-column-end: 2;
+    border: 1px solid black;
+    text-align: start;
+    background-color: #E7ECEF;
+    position: relative;
+    padding: 20px;
+    max-width: auto;
+    max-height: auto;
+
+
+}
+
+.item33 ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
- 
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  }
-  .item33 li {
-    padding: 5px;
- 
-  }
-  .btn-servicios {
-    position: absolute; 
-    bottom: 10px; 
-    right: 10px; 
-  }
-  .item44 {
-    
-    grid-column-start: 3;
-  grid-column-end: 4;
-  text-align: center;
-  
-  }
+    flex-direction: column;
+}
 
-  .carrusel1 {
-    
+.item33 li {
+    padding: 5px;
+
+}
+
+.item33 p{
+    font-size: 15px;
+}
+
+
+.clientes {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.carrusel1 {
     display: flex;
     gap: 10px;
     justify-content: center;
-  margin-top: 10px;
-  }
-  
-  .carrusel1 ul {
+    margin-top: 10px;
+}
+
+.carrusel1 ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    max-width: 1030px;
-    
-    
-    
-  }
-  .carrusel-fotos1 li{
-    animation: slide1 15s linear normal infinite;
-    position: relative;
-  }
-  
-  .carrusel-fotos1 {
+}
+
+.carrusel-fotos1 li {
+    animation: slide1 30s linear normal infinite;
+    width: 200px;
+}
+
+.carrusel-fotos1 {
     display: flex;
     gap: 10px;
     overflow: hidden;
-    
-  }
-  
-  .carrusel-fotos1 img {
-    
-    
-    width: 830px;
-    height: 200px;
-    
-  }
-  @keyframes slide1 {
+}
+
+.carrusel-fotos1 img {
+    width: 150px;
+    height: auto;
+}
+
+.carrusel-fotos1 p {
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+@keyframes slide1 {
     0% {
-      transform: translateX(0%);
+        transform: translateX(0%);
     }
+
     100% {
         transform: translateX(-400%);
     }
 
-  }
+}
 
-  .item55 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    
-    
-    background-color: none;
-  }
-.item55 ul{
-display: flex;
-justify-content: space-evenly;
-flex-wrap: wrap;
-align-content: center;
-padding-top: 10px;
+
+
+.item55 {
+    background-color: white;
+    padding: 10px;
 }
-.item55 img{
-    height: 150px;
+
+.item55 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-top: 10px;
 }
+
+.item55 img {
+    height: 50px;
+}
+
+.lupa_index {
+    width: 25px;
+}
+
+
+
+
+
+
 
 /*FOOTER*/
 .foot {
@@ -340,12 +371,14 @@ padding-top: 10px;
     align-items: auto;
     align-content: space-around;
     padding: 20px;
-   
+
 }
+
 .foot ul {
     margin-top: 5px;
     list-style: none;
 }
+
 .redes {
     display: flex;
     justify-content: flex-start;
@@ -357,15 +390,15 @@ padding-top: 10px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 30%;
     max-width: 70px; 
     margin-right: 10px; 
   }
   
-  .redes a img {
-    max-width: 100%;
-    height: auto;
+  .icn_redes {
+    width: 50px;
   }
+
+
 /* SERVICIOS */
 
 .item_right{
@@ -613,6 +646,24 @@ padding-top: 10px;
     nav li:hover {
         background-color: #A3CEF1;
         color: #000;
+    }
+
+    /* INDEX */
+
+    .item55 ul {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-content: center;
+        padding-top: 10px;
+    }
+    
+    .item55 img {
+        height: 100px;
+    }
+
+    .icn_redes{
+        width: 50px;
     }
 
     /* SERVICIOS */
