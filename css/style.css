@@ -315,7 +315,8 @@ nav ul li a:hover {
 }
 
 .carrusel-fotos1 li {
-    animation: slide1 15s linear normal infinite;
+    animation: slide1 10s linear normal infinite backwards;
+  
     width: 200px;
 }
 
@@ -334,15 +335,16 @@ nav ul li a:hover {
 .carrusel-fotos1 p {
     font-size: 15px;
     padding-top: 5px;
+    
 }
 
 @keyframes slide1 {
     0% {
-        transform: translateX(-600%);
+        transform: translateX(-530%);
     }
 
     100% {
-        transform: translateX(550%);
+        transform: translateX(180%);
     }
 
 }
