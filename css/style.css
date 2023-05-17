@@ -431,6 +431,10 @@ nav ul li a:hover {
 
 /* SERVICIOS */
 
+.serv_header{
+    background-color: white;
+}
+
 .item_right{
     display: flex;
     height: auto;
