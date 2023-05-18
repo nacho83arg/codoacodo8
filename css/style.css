@@ -234,8 +234,6 @@ nav ul li a:hover {
     grid-column-start: 1;
     grid-column-end: 1;
     border: 1px solid #8B8C89;
-    grid-column-start: 1;
-    grid-column-end: 1;
     text-align: start;
     background-color: #A3CEF1;
     position: relative;
@@ -245,7 +243,6 @@ nav ul li a:hover {
     -webkit-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
     -moz-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
     box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
-
 }
 
 .item22 p{
@@ -302,6 +299,7 @@ nav ul li a:hover {
     grid-column-start: 3;
     grid-column-end: 3;
     max-width: 500px;
+    max-height: 300px;
     text-align: center;
     padding: 20px;
     background-color: #A3CEF1;
@@ -311,7 +309,7 @@ nav ul li a:hover {
     box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
 }
 
-.carrusel1 {
+/* .carrusel1 {
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -356,9 +354,98 @@ nav ul li a:hover {
         transform: translateX(-430%);
     }
 
+} */
+
+@keyframes slide4 {
+	0% { transform: translateX(0); }
+	10% { transform: translateX(0); }
+
+	15% { transform: translateX(-100%); }
+	30% { transform: translateX(-100%); }
+
+	35% { transform: translateX(-200%); }
+	50% { transform: translateX(-200%); }
+
+	55% { transform: translateX(-300%); }
+	70% { transform: translateX(-300%); }
+
+	75% { transform: translateX(-400%); }
+	90% { transform: translateX(-400%); }
+
+	95% { transform: translateX(-500%); }
+	100% { transform: translateX(-500%); }
 }
 
 
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+    
+}
+
+.slider {
+	position: relative;
+}
+
+.slides {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+    list-style: none;
+}
+
+.slide {
+	width: 100%;
+	flex-shrink: 0;
+	animation-name: slide4;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.slides:hover .slide {
+	animation-play-state: paused;
+}
+
+.slide img {
+	width: 100px;
+	vertical-align: top;
+}
+
+
+
+/* .caption {
+	color: white;
+	text-shadow: 1px 1px black;
+	font-size: 8vw;
+	position: absolute;
+	bottom: 8vw;
+	right: 4vw;
+} */
+
+.slide:target {
+	animation-name: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 50;
+}
+
+
+
+/* @media only screen and (min-width: 1200px) {
+	.slide {
+		width: 1200px;
+	}
+
+	.caption {
+		font-size: 96px;
+		bottom: 96px;
+		right: 50px;
+	}
+} */
 
 .item55 {
     background-color: white;
