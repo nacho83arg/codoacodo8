@@ -175,6 +175,8 @@ nav ul li a:hover {
     grid-column-end: 4;
     display: flex;
     gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     justify-content: center;
     background-color: white;
 
@@ -246,7 +248,7 @@ nav ul li a:hover {
 }
 
 .item22 p{
-    font-size: 15px;
+    font-size: 18px;
 }
 .item22 a {
     position: absolute; 
@@ -286,7 +288,7 @@ nav ul li a:hover {
 }
 
 .item33 p{
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .item33 a {
@@ -450,6 +452,11 @@ nav ul li a:hover {
 .item55 {
     background-color: white;
     padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
+    box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
 }
 
 .item55 ul {
