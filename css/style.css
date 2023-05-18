@@ -106,11 +106,11 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-wrap: wrap;
     width: auto;
     max-height: 0px;
     overflow: hidden;
     transition: 1s all;
+    text-align: center;
 }
 
 .mostrar {
@@ -653,7 +653,6 @@ nav ul li a:hover {
         grid-area: nav;
         width: 100%;
         background-color: #274C77;
-        width: 100%;
         max-height: 100px;
     }
 
@@ -662,7 +661,7 @@ nav ul li a:hover {
         text-align: center;
         text-decoration: none;
         color: white;
-        font-size: 18px;
+        font-size: 0.8em;
         font-weight: bold;
 
     }
@@ -674,6 +673,7 @@ nav ul li a:hover {
         background-color: #274C77;
         text-align: center;
         color: #fff;
+        vertical-align: middle;
     }
 
 
@@ -781,7 +781,7 @@ nav ul li a:hover {
         text-align: center;
         text-decoration: none;
         color: white;
-        font-size: 14px;
+        font-size: 0.8em;
         font-weight: bold;
 
     }
