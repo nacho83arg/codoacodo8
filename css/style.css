@@ -490,6 +490,9 @@ nav ul li a:hover {
     align-items: auto;
     align-content: space-around;
     padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 
 }
 
@@ -562,6 +565,11 @@ nav ul li a:hover {
     gap: 20px;
     grid-template-columns: 50px auto;
     grid-template-rows: auto auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
+    box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
 }
 
 .img_s {
@@ -592,15 +600,21 @@ nav ul li a:hover {
 .quienes {
     background: #E7ECEF;
     padding: 1em;
-    -webkit-box-shadow: 1px 0px 5px 0px rgba(139,140,137,1);
-    -moz-box-shadow: 1px 0px 5px 0px rgba(139,140,137,1);
-    box-shadow: 1px 0px 5px 0px rgba(139,140,137,1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
+    box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
 }
 
 .quienes h2 {
     text-align: center;
     font-size: 2em;
     padding-bottom: 0.5em;
+}
+
+.quienes p{
+    padding: 10px;
 }
 
 .oficina img {
@@ -616,9 +630,11 @@ nav ul li a:hover {
     padding-top: 1em;
     padding-bottom: 1em;
     background: #E7ECEF;
-    -webkit-box-shadow: 1px 2px 5px 0px rgba(139,140,137,1);
-    -moz-box-shadow: 1px 2px 5px 0px rgba(139,140,137,1);
-    box-shadow: 1px 2px 5px 0px rgba(139,140,137,1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
+    box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
 }
 .personal-item {
     margin: 20px;
@@ -650,9 +666,11 @@ nav ul li a:hover {
 	align-content: center;
     padding-bottom: 40px;
 	background: #e7ecef;
-    -webkit-box-shadow: 1px 2px 5px 0px rgba(139,140,137,1);
-    -moz-box-shadow: 1px 2px 5px 0px rgba(139,140,137,1);
-    box-shadow: 1px 2px 5px 0px rgba(139,140,137,1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
+    box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
 }
 
 .input-text {
