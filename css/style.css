@@ -162,7 +162,6 @@ nav ul li a:hover {
 }
 
 .grid-container34>div {
-
     padding: 20px 0;
     font-size: 30px;
     column-gap: 50px;
@@ -225,23 +224,20 @@ nav ul li a:hover {
 
 
 .principal{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
     
 
 }
 
 .item22 {
-    grid-column-start: 1;
-    grid-column-end: 1;
     border: 1px solid #8B8C89;
-    text-align: start;
     background-color: #A3CEF1;
-    position: relative;
     padding: 20px;
-    max-width: 500px;
-    max-height: 300px;
+    max-width: 360px;
+    max-height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     -webkit-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
     -moz-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
     box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
@@ -257,20 +253,22 @@ nav ul li a:hover {
   
 }
 
+.item22 h3{
+    font-size: 25px;
+    text-align: center;
+}
+
 .item33 {
-    grid-column-start: 2;
-    grid-column-end: 2;
     border: 1px solid #8B8C89;
-    text-align: start;
     background-color: #A3CEF1;
-    position: relative;
     padding: 20px;
-    max-width: 500px;
-    max-height: 300px;
+    max-width: 360px;
+    max-height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     -webkit-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
     -moz-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
     box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
-
 
 }
 
@@ -295,20 +293,31 @@ nav ul li a:hover {
     position: absolute; 
     bottom: 10px; 
     right: 10px; 
-  
+ 
 }
+
+.item33 h3{
+    text-align: center;
+    font-size: 25px;
+}
+
 .clientes {
-    grid-column-start: 3;
-    grid-column-end: 3;
-    max-width: 500px;
-    max-height: 300px;
+    max-width: 360px;
+    max-height: auto;
     text-align: center;
     padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     background-color: #A3CEF1;
     border: 1px solid #8B8C89;
     -webkit-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
     -moz-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
     box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
+}
+
+.clientes h3{
+    font-size: 25px;
+    text-align: center;
 }
 
 /* .carrusel1 {
@@ -385,11 +394,16 @@ nav ul li a:hover {
     
 }
 
+.wrapper p{
+    font-size: 15px;
+}
+
 .slider {
 	position: relative;
 }
 
 .slides {
+    align-items: center;
 	position: relative;
 	display: flex;
 	overflow: hidden;
@@ -461,15 +475,23 @@ nav ul li a:hover {
 
 .item55 ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-content: center;
     padding-top: 10px;
 }
 
+
 .item55 img {
     height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.item55 h3{
+    font-size: 25px;
+    text-align: center;
 }
 
 .lupa_index {
@@ -484,14 +506,13 @@ nav ul li a:hover {
 
 /*FOOTER*/
 .foot {
-    display: grid;
-    grid-template-columns: repeat(12, auto);
-    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
     align-items: auto;
     align-content: space-around;
-    padding: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 
 
 }
@@ -499,31 +520,58 @@ nav ul li a:hover {
 .foot ul {
     margin-top: 5px;
     list-style: none;
+
+}
+
+.foot h3{
+    font-size: 18px;
+}
+
+.foot p{
+    font-size: 15px;
+}
+
+.datos{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .redes {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
   }
   
   .redes a {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     max-width: 70px; 
     margin-right: 10px; 
   }
   
   .icn_redes {
-    width: 50px;
+    width: 30px;
+  }
+
+  .mapa {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   footer a{
     text-decoration: none;
     color: white;
   }
+
+.copy{
+    text-align: center;
+}
+
 
 
 /* SERVICIOS */
@@ -735,6 +783,12 @@ nav ul li a:hover {
 
 
 
+
+
+
+
+
+
 /* RESPONSIVE TABLET*/
 
 
@@ -796,21 +850,33 @@ nav ul li a:hover {
 
     /* INDEX */
 
-    .item55 ul {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        align-content: center;
-        padding-top: 10px;
+    .item22 {
+        justify-content: center;
+        width: auto;
+        max-height: auto;
+
     }
+
+    .item33 {
+        width: auto;
+        max-height: auto;
+
+    }
+
+    .clientes{
+        width: auto;
+        max-height: auto;
+    }
+
     
     .item55 img {
         height: 100px;
     }
 
-    .icn_redes{
-        width: 50px;
-    }
+
+
+
+
 
     /* SERVICIOS */
 
@@ -843,32 +909,9 @@ nav ul li a:hover {
 
     /* FOOTER */
 
-    .foot {
-        display: grid;
-        grid-template-columns: repeat(12, auto);
-        justify-content: space-around;
-        align-items: auto;
-        align-content: space-around;
-        padding: 20px;
-        list-style: none;
-    }
 
-    .datos {
-        grid-column: 1 / span 3;
-        text-align: left;
-        list-style: none;
-    }
 
-    .mapa {
-        grid-column: 10 / span 8;
-        text-align: center;
-    }
 
-    .copy {
-        grid-column: 4 / span 8;
-        text-align: center;
-    }
-}
 
 /* CONTACTO */
 
@@ -880,8 +923,35 @@ nav ul li a:hover {
     width: 60%;
 }
 
+.foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 
-/* RESPONSIVE PC*/
+
+}
+
+
+.foot p{
+    font-size: 16px;
+}
+
+.foot h3{
+    font-size: 20px;
+}
+
+.icn_redes {
+    width: 30px;
+  }
+
+}
+
+
+
+/* RESPONSIVE PC CHICA*/
 
 
 
@@ -908,6 +978,72 @@ nav ul li a:hover {
     width: 50%;
 }
 
+/* INDEX */
+
+.principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+
+}
+
+.wrapper p{
+    font-size: 18px;
+}
+
+.item55 ul{
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+}
 
 
+/* RESPONSIVE PC GRANDE*/
+
+
+@media (min-width: 1200px) {
+
+    .wrapper p{
+        font-size: 20px;
+    }
+
+    .item22 {
+        justify-content: center;
+        width: 600px;
+        max-height: auto;
+
+    }
+
+    .item33 {
+        width: 600px;
+        max-height: auto;
+
+    }
+
+    .clientes{
+        width: 600px;
+        max-height: auto;
+    }
+
+
+   
+    .foot p{
+        font-size: 20px;
+    }
+
+    .foot h3{
+        font-size: 25px;
+    }
+
+    .icn_redes {
+        width: 40px;
+      }
+
+
+
+    
 }
