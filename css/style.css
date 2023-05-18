@@ -472,8 +472,15 @@ nav ul li a:hover {
     -moz-box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
     box-shadow: 1px 2px 5px 0px rgba(139, 140, 137, 1);
 }
+.item56 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 1em;
+}
 
-.item55 ul {
+/*.item55 ul {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -481,10 +488,10 @@ nav ul li a:hover {
     align-content: center;
     padding-top: 10px;
 }
-
+*/
 
 .item55 img {
-    height: 50px;
+    height: 75px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
