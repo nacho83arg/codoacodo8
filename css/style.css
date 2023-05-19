@@ -231,6 +231,7 @@ nav ul li a:hover {
 }
 
 .item22 {
+    position: relative;
     border: 1px solid #8B8C89;
     background-color: #A3CEF1;
     padding: 20px;
@@ -248,7 +249,7 @@ nav ul li a:hover {
 }
 .item22 a {
     position: absolute; 
-    bottom: 10px; 
+    bottom: 5px; 
     right: 10px; 
   
 }
@@ -259,6 +260,7 @@ nav ul li a:hover {
 }
 
 .item33 {
+    position: relative;
     border: 1px solid #8B8C89;
     background-color: #A3CEF1;
     padding: 20px;
@@ -291,7 +293,7 @@ nav ul li a:hover {
 
 .item33 a {
     position: absolute; 
-    bottom: 10px; 
+    bottom: 5px; 
     right: 10px; 
  
 }
