@@ -701,6 +701,11 @@ nav ul li a:hover {
 
 /* CONTACTO */
 
+.error {
+    margin: 2%;
+}
+
+
 .formulario {
     color: #274C77;
 	text-shadow: 0px 0px 0px #8B8C89;
@@ -718,7 +723,8 @@ nav ul li a:hover {
 }
 
 .input-text {
-	margin: 2%;
+	margin: 1%;
+    margin-bottom: 0.5%;
 	width: 85%;
 	border-radius: 8px;
 	height: 48px;
@@ -732,7 +738,7 @@ nav ul li a:hover {
 }
 
 .text {
-    margin: 2%;
+    margin: 1%;
 	width: 85%;
 	border-radius: 8px;
 	height: 192px;
@@ -746,6 +752,7 @@ nav ul li a:hover {
 }
 
 #boton-enviar {
+    margin: 2%;
     color: #e7ecef;
     background-color: #274c77;
     font-size: 19px;

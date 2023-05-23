@@ -49,9 +49,15 @@
         </div>
         <div class="contenedor-form">
             <form id="contacto" action="contacto.html" method="post">
-                <input type="text" id="form-nombre" name="nombre" placeholder="Nombre" class="input-text" required>
-                <input type="email" id="form-mail" name="mail" placeholder="E-mail" class="input-text" required>
-                <textarea id="form-consulta" name="consulta" form="contacto" class="text" placeholder="Su consulta aqui" required></textarea>
+                <br><input type="text" id="form-nombre" name="nombre" placeholder="Nombre" class="input-text">
+                <br><span id="error-nombre" class="error"></span>
+
+                <br><input type="email" id="form-mail" name="mail" placeholder="E-mail" class="input-text">
+                <br><span id="error-mail" class="error"></span>
+
+                <br><textarea id="form-consulta" name="consulta" form="contacto" class="text" placeholder="Su consulta aqui"></textarea>
+                <br><span id="error-consulta" class="error"></span>
+
                 <br><input id="boton-enviar" type="submit" name="boton" value="Enviar">
             </form>
         </div>
