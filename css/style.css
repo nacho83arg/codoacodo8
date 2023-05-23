@@ -100,6 +100,8 @@ h6 {
 
 
 
+
+
 /* MENU */
 
 nav {
@@ -219,7 +221,12 @@ nav ul li a:hover {
 	width: 100%;
 	vertical-align: top;
     height: 300px;
+
 }
+
+
+
+
 
 /* BOXES CENTRALES*/
 
@@ -402,15 +409,28 @@ nav ul li a:hover {
 	animation-duration: 15s;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
-}
+    background-color: #E7ECEF;
+    height: 270px;
+    border-radius: 15%;
+    box-shadow: inset 2px 2px 2px 2px #999999;
+    }
 
 .slides:hover .slide {
 	animation-play-state: paused;
 }
 
+.slide p{
+    padding: 2px;
+}
+
 .slide img {
-	width: 100px;
-	vertical-align: top;
+    width: 100px;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+
+
 }
 
 .slide:target {
@@ -762,6 +782,8 @@ nav ul li a:hover {
 
 
 /* RESPONSIVE TABLET*/
+
+
 
 
 @media (min-width: 600px) {
