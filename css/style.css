@@ -1108,5 +1108,9 @@ nav ul li a:hover {
 
 
 
-    
+      @media (max-width: 380px) {
+        .wrapper1 {
+            display: none;
+        }
+    }
 }
