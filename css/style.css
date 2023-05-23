@@ -1105,12 +1105,10 @@ nav ul li a:hover {
     .icn_redes {
         width: 40px;
       }
-
-
-
-      @media (max-width: 380px) {
-        .wrapper1 {
-            display: none;
-        }
+      
+}
+@media (max-width: 380px) {
+    .wrapper1 {
+        display: none;
     }
 }
