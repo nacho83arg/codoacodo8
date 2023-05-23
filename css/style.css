@@ -220,7 +220,7 @@ nav ul li a:hover {
 .slide1 img {
 	width: 100%;
 	vertical-align: top;
-    height: 300px;
+    height: auto;
 
 }
 
@@ -383,6 +383,7 @@ nav ul li a:hover {
 .wrapper {
 	max-width: 1000px;
 	margin: 0 auto;
+
     
 }
 
@@ -400,10 +401,13 @@ nav ul li a:hover {
 	display: flex;
 	overflow: hidden;
     list-style: none;
+
+
 }
 
 .slide {
 	width: 100%;
+
 	flex-shrink: 0;
 	animation-name: slide4;
 	animation-duration: 15s;
