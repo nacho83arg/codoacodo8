@@ -569,6 +569,16 @@ nav ul li a:hover {
     background-color: white;
 }
 
+.serv_header h3 {
+    text-align: center;
+    font-size: 1.2em;
+    padding-top: 0.75em;
+}
+
+.serv_header p {
+    padding-bottom: 0.25em;
+}
+
 .item_right{
     display: flex;
     height: auto;
@@ -646,7 +656,7 @@ nav ul li a:hover {
 
 .quienes h2 {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     padding-bottom: 0.5em;
 }
 
