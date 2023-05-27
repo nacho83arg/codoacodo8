@@ -16,7 +16,7 @@ body {
     min-height: 100%;
     padding: 2%;
     margin: 2%;
-    background-image: url("/img/background.jpg");
+    background-image: url("https://raw.githubusercontent.com/nacho83arg/codoacodo8/main/img/background.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
